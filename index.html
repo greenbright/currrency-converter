@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- RESPONSIVE DOWN TO 300px WIDE -->
+
+<noscript>
+    <div style="
+                width:100%;
+                height:100%;
+                color: #1E90FF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #FFD700;">
+    <h1 style="margin:0">PLEASE ENABLE JAVASCRIPT</h1>
+    </div>
+    <style>
+      .container {
+        display: none;
+      }
+    </style>
+  </noscript><!-- END noscript -->
+  
+  <div class="container">
+  
+    <div class="row">
+  
+      <nav>
+        <ul id="menu">
+          <li class="menu-item"><a href="#">menu</a></li>
+          <li class="menu-item hidden"><a href="#">tools</a></li>
+          <li class="menu-item hidden"><a href="#">trading</a></li>
+          <li class="menu-item hidden"><a href="#">resources</a></li>
+          <li class="menu-item hidden"><a href="#">transfers</a></li>
+        </ul>
+      </nav><!-- END menu -->
+  
+      <div class="icons">
+        <i class="fas fa-balance-scale"></i>
+        <i class="fas fa-calculator"></i>
+        <i class="fas fa-percent"></i>
+        <i class="far fa-chart-bar"></i>
+        <i class="fas fa-chart-line"></i>
+      </div><!-- END icons -->
+  
+      <h1 class="banner">Currency Converter</h1>
+  
+      <div class="column">
+  
+        <form action="" method="POST">
+  
+          <label for="amount">Amount:
+            <input id="amount" name="amount" type="text" value="" placeholder="Amount" required>
+          </label>
+  
+          <label for="rate">From:
+              <select id="rate">
+                <option value="USD">US Dollar (USD)</option>
+                <option value="MXN">Mexican Peso (MXN)</option>
+                <option value="XOF">Beninese CFA (XOF)</option>
+                <option value="CAD">Canadian Dollar (CAD)</option>
+                <option value="HTG">Haitian Gourde (HTG)</option>
+                <option value="XBT">Bitcoin (BTC)</option>
+                <option value="EUR">Cuban Peso (CUP)</option>
+                <option value="GBP">British Pound (BGP)</option>
+              </select>
+            </label>
+  
+          <label for="to">To:
+              <select id="to">
+                <option value="MXN">Mexican Peso (MXN)</option>
+                <option value="USD">US Dollar (USD)</option>
+                <option value="XOF">Beninese CFA (XOF)</option>
+                <option value="CAD">Canadian Dollar (CAD)</option>
+                <option value="HTG">Haitian Gourde (HTG)</option>
+                <option value="XBT">Bitcoin (BTC)</option>
+                <option value="EUR">Cuban Peso (CUP)</option>
+                <option value="GBP">British Pound (BGP)</option>
+              </select>
+            </label>
+  
+        </form><!-- END form -->
+  
+      </div><!-- END column -->
+  
+      <button class="btn" type="button">CALCULATE</button>
+  
+      <h2 class="amount"><span id="currency"></span><span id="total"></span><span id="country-code"></span></h2>
+  
+      <table id="hide">
+        <thead>
+          <tr>
+            <th></th>
+            <th>30 days</th>
+            <th>90 days</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>high</td>
+            <td>0.0249</td>
+            <td>0.9826</td>
+          </tr>
+          <tr>
+            <td>low</td>
+            <td>0.0247</td>
+            <td>0.9824</td>
+          </tr>
+          <tr>
+            <td>average</td>
+            <td>0.0248</td>
+            <td>0.9825</td>
+          </tr>
+        </tbody>
+      </table><!-- END table -->
+  
+    </div><!-- END row -->
+  
+  </div><!-- END container -->
+  <script src="script.js"></script>
+</body>
+</html>
